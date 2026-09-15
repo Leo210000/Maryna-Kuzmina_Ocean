@@ -1,0 +1,239 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgb(250, 253, 255) 0%,
+        rgb(220, 245, 250) 35%,
+        rgb(70, 130, 160) 100%
+    );
+} 
+
+ body {
+    background-image: url("https://images.unsplash.com/photo-1508439192733-e7448b721adc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM5fHxvY2VhbnxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh; 
+} 
+
+h1 {
+    color: rgb(60, 110, 160); 
+    font-family: "DynaPuff", serif;
+    margin: 50px;
+    margin-top: 70px;
+    line-height: 1.2;
+    /* -webkit-text-stroke: 1px darkblue; */
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#OCEAN {
+    display: inline-block;
+    font-size: 110px;
+    font-family:  "DynaPuff", serif;
+    color: #0E8D94;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px darkblue;
+    /* -webkit-text-stroke: 1px darkblue;
+    font-style: italic; */
+
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0) skewY(0deg);
+    }
+
+    25% {
+        transform: translateY(-10px) skewY(2deg);
+    }
+
+    50% {
+        transform: translateY(0) skewY(-2deg);
+    }
+
+    75% {
+        transform: translateY(-10px) skewY(2deg);
+    }
+
+    100% {
+        transform: translateY(0) skewY(0deg);
+    }
+}
+
+ul {
+    margin: 0 0 0 10px;
+    padding-left: 0;
+    font-family: "Victor Mono", serif;
+    color: #036564; 
+    line-height: 1.6;
+    font-size: 14px;
+    list-style-position: inside;
+}
+
+li {
+    white-space: nowrap;
+}
+
+.content {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sailboat {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sailboat img {
+    max-width: 350px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.sailboat-movement {
+    animation: boat 4s ease-in-out infinite;
+}
+
+@keyframes boat {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-8px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(5px) rotate(1.5deg);
+    }
+
+    75% {
+        transform: translateX(-5px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+
+h1, .content {
+    position: relative; 
+    z-index: 2; 
+}
+
+.birds {
+    position: fixed;
+    top: 15%;          
+    left: 54%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;         
+    pointer-events: none; 
+}
+
+.birds img {
+    max-width: 480px; 
+    height: auto;
+}
+
+.island {
+    position: fixed;
+    bottom: 5px; 
+    right: 20px; 
+    opacity: 0.5;  
+    z-index: 1; 
+    pointer-events: none;
+}
+
+.island img {
+    max-width: 350px; 
+    height: auto;
+    display: block;  
+}
+
+.clouds {
+    position: fixed;
+    top: -10px;        
+    right: 50px;      
+    z-index: 1;       
+    pointer-events: none;
+}
+
+.clouds img {
+    max-width: 350px; 
+    height: auto;
+    opacity: 0.2;     
+}
+
+.clouds-second {
+    position: fixed;
+    top: 20px;       
+    left: 270px;       
+    z-index: 1;       
+    pointer-events: none;
+}
+
+.clouds-second img {
+    max-width: 200px; 
+    height: auto;
+    opacity: 0.2;   
+}
+
+.island-second {
+    position: fixed;
+    bottom: 50px;     
+    left: 0px;       
+    z-index: 1;      
+    pointer-events: none;
+} 
+
+.island-second img {
+    max-width: 280px; 
+    height: auto;
+    opacity: 0.5;     
+}  
+
+.left-column {
+    width: 500px;
+    flex-shrink: 0;
+    margin-top: -10px;
+}
+
+.everything {
+    position: relative; 
+    z-index: 5;    
+    
+    margin-left: 160px;
+    margin-top: 47px;
+    font-family: "DynaPuff", "Dancing Script", "Chewy", serif;
+    font-size: 25px;
+    color: #D0ECEA;
+    font-style: italic;
+}
+
+#quote {
+    width: 500px;
+    flex-shrink: 0;
+    margin-left: 310px;
+    margin-top: -150px;
+    line-height: 1.5;
+    font-family: "Victor Mono", serif;
+    color: rgb(60, 110, 160);
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+
+  #khan {
+  font-size: 16px;
+  } 
+  
+  
+
